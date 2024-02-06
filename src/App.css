@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.travel-guide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  align-items: center;
+  background-color: #eef4f7;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.travel-guide-heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: #334155;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #52bbf0;
+}
+.guide-ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.tour-guide {
+  width: 45%;
+  background-color: white;
+  margin: 10px;
+}
+img {
+  width: 100%;
+}
+.text-container {
+  padding-left: 20px;
+}
+.tour-name {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #334155;
+  font-weight: 500;
+}
+.tour-desc {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
