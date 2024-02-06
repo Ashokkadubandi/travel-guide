@@ -43,7 +43,7 @@ class App extends Component {
 
   showLoader = () => (
     <div data-testid="loader">
-      <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
+      <Loader type="TailSpin" color="#00BFFF" height={50} width={5} />
     </div>
   )
 
