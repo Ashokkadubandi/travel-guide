@@ -6,21 +6,23 @@ import './App.css'
 const apiConstants = {
   success: 'SUCCESS',
   pending: 'PENDING',
-  initial: 'INITIAL',
 }
 
 // Replace your code here
 class App extends Component {
-  state = {travelGuideList: [], apiStatus: apiConstants.initial}
+  constructor(props) {
+    super(props)
+    this.state = {travelGuideList: [], apiStatus: apiConstants.pending}
+  }
 
   componentDidMount() {
     this.getApiUrl()
   }
 
   getApiUrl = async () => {
-    this.setState({apiStatus: apiConstants.pending})
     const options = {
       method: 'GET',
+      ContentType: 'Application/json',
     }
     const API = 'https://apis.ccbp.in/tg/packages'
     const response = await fetch(API, options)
@@ -37,8 +39,6 @@ class App extends Component {
         apiStatus: apiConstants.success,
       })
     }
-
-    // console.log(originalData)
   }
 
   showLoader = () => (
